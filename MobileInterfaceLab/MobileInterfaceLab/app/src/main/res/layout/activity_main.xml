@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="3"
+        android:maxLines="1"
+        android:textAlignment="viewEnd"
+        android:gravity="bottom"
+        app:autoSizeMaxTextSize="80sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        android:text="sample" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:text="" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal"
+        android:useDefaultMargins="true"
+        >
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:backgroundTint="#bbbbbb"
+            android:text="2"
+            android:textSize="32sp" />
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/buttonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:backgroundTint="#ff9e00"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/buttonMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:backgroundTint="#ff9e00"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:backgroundTint="#ff9e00"
+            android:layout_rowWeight="1"/>
+
+
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+
+            android:backgroundTint="#ff5555"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/buttonEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:backgroundTint="#bbbbbb"
+            android:layout_rowWeight="1"/>
+        <Button
+            android:textSize="32sp"
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:backgroundTint="#ff9e00"
+            android:layout_rowWeight="1"
+            />
+
+
+    </GridLayout>
+
+</LinearLayout>
